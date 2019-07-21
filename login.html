@@ -10,4 +10,10 @@
     <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="true"></div>
   </body>
   <script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script type="text/javascript">
+    console.log("hello");
+    FB.getLoginStatus(function(response) {
+      console.log("response", response);
+    });
+  </script>
 </html>
